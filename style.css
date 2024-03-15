@@ -1,0 +1,161 @@
+/* Styly pro menu */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Sora", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Zajištění, aby bylo menu nad hero sekcí */
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+    font-size: 24px;
+}
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.5);
+}
+
+h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.5);
+}
+
+/* Styly pro hero sekci */
+.hero {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+}
+
+.hero-text {
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    top: 50%; /* Posune nadpis na střed vertikálně */
+    left: 50%; /* Posune nadpis na střed horizontálně */
+    transform: translate(-50%, -50%); /* Posune nadpis o polovinu vlastní šířky a výšky zpět, aby byl uprostřed */
+    z-index: 1; /* Zajištění, aby byl nadpis nad videem */;
+}
+
+.cta-button {
+    background-color: #2EC4B6;
+    border-radius: 300px;
+    padding: 12px 36px;
+    font-size: 32px;
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    color: #401268;
+}
+
+.cta-button:hover {
+    background-color: rgba(46, 196, 181, 0);
+    border: 1px solid #2EC4B6;
+    color: #2EC4B6;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.5);
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: hue-rotate(70deg); /* Otočí odstín o 90 stupňů, můžete změnit úhel podle potřeby */
+
+}
+
+/* Styly pro claim */
+.first {
+    border-radius: 110px;
+    background: #946FDD;
+    color: white;
+    padding: 10px 28px;
+}
+
+.second {
+    border-radius: 0;
+    background: #401268;
+    color: #946FDD;
+    padding: 10px 28px;
+}
+
+.three {
+    border-radius: 30px;
+    color: #401268;
+    border: 3px solid #401268;
+    background: #FFFFFF;
+    padding: 10px 28px;
+}
+
+.four {
+    border-radius: 115px;
+    background: #401268;
+    color: #FFFFFF;
+    border-radius: 115px;
+    padding: 10px 28px;
+}
+
+.five {
+    background: #FFFFFF;
+    color: #401268;
+    padding: 10px 28px;
+}
+
+/* Styly pro usp sekci */
+
+.usp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #946FDD; /*Barva pozadí */
+    padding: 20px 0;
+    margin: 100px auto;
+    border-radius: 20px;
+    width: 65%;
+}
+.usp .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usp .icons img {
+    width: 50px; /* Velikost ikon */
+    margin: 0 10px; /* Mezery mezi ikonami */
+}
+
+/* Styly pro sekci s textem */
+.text-section {
+    padding: 50px 20px; /* Odsazení textové sekce */
+}
+
+/* Styly pro footer */
+footer {
+    background-image: url("media/pohar2.jpg");
+    background-size: cover;
+    padding: 90px;
+    text-align: left;
+    color:#FFFFFF
+}

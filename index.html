@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Contest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Menu -->
+<nav id="navbar">
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Prizes</a></li>
+        <li><a href="#">Rules</a></li>        <li><a href="#">Results</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+</nav>
+
+<!-- Hero sekce -->
+<section class="hero">
+    <div>
+        <p>Are you ready for challenge? </p>
+    </div>
+    <div class="hero-text">
+        <h1>Fintokei Contest</h1>
+        <p>Show your skills in</br> <span class="first">nation</span> <span class="second">trading</span> <span class="five">contest</span></p>
+        <button class="cta-button">Enter competition</button>
+    </div>
+    <video autoplay loop muted>
+        <source src="media/hero-video.mp4" type="video/mp4">
+        <!-- Případně zde můžete vložit fallback obrázek -->
+    </video>
+</section>
+
+<!--
+<section class="usp">
+     <div class="icons">
+        <img src="media/money-bag.png">
+        
+     </div>
+</section>
+
+
+<section class="text-section">
+    <p>Zde můžete vložit váš text.</p>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Má webová stránka | <a href="#">Kontaktujte nás</a></p>
+    <p>Adresa: Vaše adresa, Město, PSČ</p>
+</footer>
+-->
+<script>
+    // Získání výšky menu
+    var menuHeight = document.getElementById('navbar').offsetHeight;
+
+    // Funkce pro zobrazení nebo skrytí menu
+    function toggleMenu() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > menuHeight) {
+            document.getElementById('navbar').style.top = '-100%';
+        } else {
+            document.getElementById('navbar').style.top = '0';
+        }
+    }
+
+    // Posluchač události pro skrolování stránky
+    window.addEventListener('scroll', toggleMenu);
+</script>
+
+</body>
+</html>
