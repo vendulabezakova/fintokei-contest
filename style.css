@@ -59,7 +59,6 @@ h1 {
 .content {
 height: 100vh;
 background-color: #946FDD;
-padding: 0;
 }
 
 .content video {
@@ -69,8 +68,9 @@ padding: 0;
 
 .two-columns {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
+
 
 h2 {
     text-align: center;
@@ -218,10 +218,10 @@ h2 {
 }
 
 /* Styly pro footer */
-footer {
-    background-image: url("media/pohar2.jpg");
+/*footer {
+    background-color: #946FDD;
     background-size: cover;
-    padding: 90px;
-    text-align: left;
-    color:#FFFFFF
-}
+    padding: 20px;
+    text-align: right;
+    color:#401268;
+}*/
