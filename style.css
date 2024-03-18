@@ -56,6 +56,33 @@ h1 {
     transform: translate(-50%, -50%); /* Posune nadpis o polovinu vlastní šířky a výšky zpět, aby byl uprostřed */
     z-index: 1; /* Zajištění, aby byl nadpis nad videem */;
 }
+.content {
+height: 100vh;
+background-color: #946FDD;
+padding: 0;
+}
+
+.content video {
+    filter: hue-rotate(286deg);
+    border-radius: 0 20px 20px 0;
+}
+
+.two-columns {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size:80px;
+    padding: 100px 0;
+    margin: 0;
+}
+
+.content p {
+    font-size: 21px;
+    color:#230f34;
+}
 
 .cta-button {
     background-color: #2EC4B6;
@@ -83,7 +110,46 @@ h1 {
     height: 100%;
     object-fit: cover;
     filter: hue-rotate(70deg); /* Otočí odstín o 90 stupňů, můžete změnit úhel podle potřeby */
+}
 
+.mood {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    line-height: 1.8;
+    background-color: #401268;
+}
+
+.mood img {
+    display: flex;
+    width: 33.3%;
+}
+
+.claims {
+    background-image: url("media/globe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.claims p {
+    font-size: 80px;
+    color: #fff;
+}
+
+.video {
+    height: 100vh;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Styly pro claim */
